@@ -12,10 +12,10 @@ vagrant:
       type: virtualbox
       options:
         memory: 512
-        cpus: 2
+        cpus: 1
   instances:
-    - name: common
+    - name: python
       ansible_groups:
-        - group1
+        - default
 verifier:
   name: serverspec
